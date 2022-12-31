@@ -24,7 +24,6 @@ class youtubeplayer:
         self.button.place( x = 670, y = 10)
         self.size = self.frame.winfo_id()
     def playvideo(self):
-        print(self.size)
         self.user = self.video_name.get()
         self.user_list = self.user.split(" ")
         self.user = ""
