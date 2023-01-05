@@ -22,7 +22,14 @@ class youtubeplayer:
         self.button =Button( self.window, width = 10, height= 1, pady = 2, text = "Search", bg = "#57a1f8", fg = "white", border = 0,font = ( "Microsoft Yahei UI Light", 8),
                              command = self.playvideo)
         self.button.place( x = 670, y = 10)
+        self.button1 =Button( self.window, width = 10, height= 1, pady = 2, text = "stop", bg = "#57a1f8", fg = "white", border = 0,font = ( "Microsoft Yahei UI Light", 8))
+        self.button1.place(x = 500, y = 760)
+        self.button2 =Button( self.window, width = 10, height= 1, pady = 2, text = "play", bg = "#57a1f8", fg = "white", border = 0,font = ( "Microsoft Yahei UI Light", 8))
+        self.button2.place(x = 600, y = 760)
+        self.button3 = Button( self.window, width = 10, height= 1, pady = 2, text = "stop", bg = "#57a1f8", fg = "white", border = 0,font = ( "Microsoft Yahei UI Light", 8))
+        self.button3.place(x = 700, y = 760)
         self.size = self.frame.winfo_id()
+    
     def playvideo(self):
         self.user = self.video_name.get()
         self.user_list = self.user.split(" ")
